@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="jumbotron">
+    <h1 class="display-4">Work Day Scheduler</h1>
+    <h2 class="display-5" style="color:rgb(129, 129, 131)";>for Project Managers</h2>
+    <p id="currentDay" style="font-size:24px;"></p>
+  
+  </header>
+  
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-9am">&nbsp;&nbsp;9AM</label>
+        <textarea id="new-task-9am" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-9am"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-9am"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-10am">10AM</label>
+        <textarea id="new-task-10am" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-10am"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-10am"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-11am">11AM</label>
+        <textarea id="new-task-11am" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-11am"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-11am"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-12pm">12PM</label>
+        <textarea id="new-task-12pm" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-12pm"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-12pm"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-1pm">&nbsp;&nbsp;1PM</label>
+        <textarea id="new-task-1pm" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-1pm"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-1pm"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-2pm">&nbsp;&nbsp;2PM</label>
+        <textarea id="new-task-2pm" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-2pm"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-2pm"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-3pm">&nbsp;&nbsp;3PM</label>
+        <textarea id="new-task-3pm" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-3pm"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-3pm"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-4pm">&nbsp;&nbsp;4PM</label>
+        <textarea id="new-task-4pm" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-4pm"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-4pm"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row time-block">
+      <div class="input-group mb-3">
+        <label class="my-1 mr-2 hour" for="new-task-5pm">&nbsp;&nbsp;5PM</label>
+        <textarea id="new-task-5pm" class="form-control description" aria-label="new task for this hour"
+          aria-describedby="save-button-5pm"></textarea>
+        <div class="input-group-append">
+          <button class="btn saveBtn btn-lg" type="button" id="save-button-5pm"><i class="fas fa-save"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Reference Links -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
